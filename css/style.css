@@ -75,6 +75,10 @@ body {
     bottom: -15%;
 }
 
+.password-toggle {
+    cursor: pointer;
+} 
+
 .container .remember-forgot-password {
     display: flex;
     justify-content: space-between;
