@@ -1,61 +1,54 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Form Login - PWIII</title>
-        <link rel="stylesheet" href="./css/style.css">
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+<head>
+    <title>Form Login - PWIII</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <!-- <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-        /> -->
-    </head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
 
-    <body>
-        <div class="container">
-            <form action="">
-                <h1>Login</h1>
-                <div class="input-box">
-                    <label for="email-name">E-mail/Nome</label>
-                    <input type="text" name="email-name" placeholder="Digite seu e-mail ou nome" required>
-                    <img src="./icons/person-fill.svg" alt="person-fill">
+<body>
+    <div class="container-box">
+        <form action="" class="needs-validation" novalidate>
+            <h1>Login</h1>
+            <div class="input-box">
+                <label for="email-name">E-mail/Nome</label>
+                <input type="text" name="email-name" class="form-control" placeholder="Digite seu e-mail ou nome" required>
+                <img src="./icons/person-fill.svg" alt="person-fill">
+                <div class="invalid-tooltip">
+                    Insira seu e-mail ou nome
                 </div>
-                <div class="input-box">
-                    <label for="pass">Senha</label>
-                    <input type="password" name="pass" placeholder="Digite sua senha" required>
-                    <img src="./icons/lock-fill.svg" alt="lock-fill">
+            </div>
+            <div class="input-box">
+                <label for="pass">Senha</label>
+                <input type="password" name="pass" class="form-control" placeholder="Digite sua senha" required>
+                <img src="./icons/lock-fill.svg" alt="lock-fill">
+                <div class="invalid-tooltip">
+                    Insira sua senha
                 </div>
-    
-                <div class="remember-forgot-password">
-                    <label><input type="checkbox"> Lembre de mim</label>
-                    <a href="#">Esqueceu sua senha?</a>
-                </div>
-    
-                <button type="submit" class="login-btn">Login</button>
-    
-                <div class="register">
-                    <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
-                </div>
-            </form>
-        </div>
+            </div>
 
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
+            <div class="remember-forgot-password">
+                <label><input type="checkbox"> Lembre de mim</label>
+                <a href="#">Esqueceu sua senha?</a>
+            </div>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+            <button type="submit" class="login-btn">Login</button>
+
+            <div class="register">
+                <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+            </div>
+        </form>
+    </div>
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="./js/validation.js"></script>
+</body>
 </html>
